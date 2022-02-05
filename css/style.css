@@ -21,6 +21,10 @@
 
 }
 
+.dotted_image{
+    position: absolute;
+    z-index: -1;
+}
 .section_container{
     margin: 100px 0 150px 0;
 }
@@ -174,6 +178,65 @@ nav{
 .banner_image{
     position: relative;
 }
+
+/* popup code */
+
+.popup *{
+    font-size: 1em;
+    font-weight: 400;
+}
+.popup{
+    position: absolute;
+    margin: 3px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 18px 15px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16vw;
+    z-index: +1;
+    
+}
+
+.popup_image{
+    width: 40px;
+    position: relative;
+    height: auto;
+
+}
+
+.popup_image > img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -20px;
+    left: -4px;
+}
+
+
+.comment_popup{
+    right: 0;
+    top: 205px;
+}
+
+
+.rating_popup{
+    position: absolute;
+    top: 300px;
+    left: -50px;
+    background-color: rgba(255, 255, 255, 1);;
+    padding: 18px 20px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16vw;
+    z-index: +1;
+}
+
+/* end popup code section */
+
 .banner_image_container{
     position: absolute;
     left: 60px;
@@ -222,8 +285,8 @@ nav{
     width: 150px;
     height: auto;
 }
-
 /* banner code end  */
+
 
 /* services section  */
 .services{
@@ -236,11 +299,9 @@ nav{
 .service_card{
     display: flex;
     align-items: center;  
-    /* background-color: #1D1D1F; */
 }
 
 .service_logo{
-    /* flex: 1; */
     padding: 30px;
     border-radius: 10px;
     background-color: rgba(240, 241, 236, .6);
@@ -260,15 +321,13 @@ nav{
 }
 
 .service_section > .hr{
-    
-    /* background-color: red; */
-    /* border: 1px solid rgba(112, 112, 112, .3); */
     height: 1.5px;
     background-color: rgba(112, 112, 112, .3);
 
 }
 
 /* end service section   */
+
 
 /* benifit and stars  */
 .benifit{
@@ -290,9 +349,13 @@ nav{
 
 .benifit_content{
     padding: 0 0 0 80px ;
+    position: relative;
 }
 
-
+.benifit_content> .dotted_image{
+    top: 2.8em;
+    left: 2em;
+}
 
 .benifit_content ul{
     padding-left: 20px;
@@ -306,16 +369,25 @@ nav{
     line-height: 50px;
     font-weight: 400;
 }
-
 /* end benifit */
 
 
 
 /* start our stars  */
 .stars_container{
+    
     display: flex;
     align-items: center;
 }
+.our_stars{
+    position: relative;
+}
+
+.our_stars > .dotted_image{
+    left: -2em;
+    top:2em;
+}
+
 .our_stars, .stars_poster{
     flex-basis: 50%;
 }
@@ -429,11 +501,8 @@ nav{
   .button_container > button > i {
     color: #06C167;
   }
-
-
-
-
 /* features end */
+
 
 /* product section start */
 
@@ -512,6 +581,7 @@ display: flex;
     text-shadow: 0 0 2px;
 }
 /* product section end */
+
 
 /* vegie food section   */
 
@@ -633,6 +703,4 @@ footer{
     text-align: center;
     padding: 40px;
 }
-
-
 /* end footer  */
