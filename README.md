@@ -1,6 +1,6 @@
 # 100DaysOfCode
 
-#IC_BATCH4
+# IC_BATCH4
 100DaysOfCode days of code chllange for web development
 
 #Project name: landing_page
