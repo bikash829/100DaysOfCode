@@ -238,6 +238,8 @@ nav{
 /* end popup code section */
 
 .banner_image_container{
+    width: 100%;
+    height: auto;
     position: absolute;
     left: 60px;
 }
@@ -704,3 +706,150 @@ footer{
     padding: 40px;
 }
 /* end footer  */
+
+
+
+/* ======================================Responsive code ======================================= */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+
+ }
+
+
+ @media (max-width: 1060px) { 
+    .food_card:nth-of-type(5){
+        order: 6;
+    }
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    *{
+        font-size: 15px;
+    }
+    :root{
+        --margin-beside : 0 80px;
+    }
+
+    .nav_logo h1{
+            font-size: 1em;
+    }
+
+    .nav_logo{
+        flex-basis: 45%;
+    }
+    .nav_menu{
+        flex-basis: 55%;
+    }
+
+    .banner_top_container{
+        padding: 20px 0;
+
+    }
+    .banner_description > *{
+        margin: 40px 0;
+    }
+    .banner_description > h2{
+        font-size: 3.2em;
+    }
+    .banner_image_container{
+        left: 20px;
+    }
+
+    
+    .banner_image_container > img{
+        width: 400px;
+        height: auto;
+    }
+
+    .popup, .rating_popup{
+        width: 200px;
+    }
+    .popup{
+        top: 170px;
+        right: 0;
+    }
+
+    .brands_logo > ul{
+        justify-content: space-between;
+    }
+
+    .brands_logo > ul > li img{
+        width: 30px;
+        height: auto;
+    }
+
+    .brands_logo > ul > li:nth-child(1) img{
+        width: 22px;
+
+    }
+    .banner_bottom{
+        width: auto;
+        height: 120px;       
+    }
+
+    .section_container{
+        margin: 80px 0 100px 0;
+    }
+
+    .benifit_poster img{
+        width: 80%;
+
+    }
+
+    .our_stars{
+        padding-right: 20px;
+    }
+
+    .content_title h3{
+        font-size: 3em;
+    }
+
+    .porduct_container > div{
+        padding: 30px 20px;
+
+    }
+    .veggifood_wrapper h2{
+        font-size: 3em;
+
+    }
+    .food_card_content > h2:first-child{
+        font-size: 2em;
+    }
+    
+
+    .footer_section_segment{
+        flex-basis: 20%;
+    }
+    
+    .footer_section_segment:first-child{
+        flex-basis: 30%;
+    }
+    
+    .footer_segment_title{
+        padding-bottom: 30px;
+    }
+    
+    .footer_section_segment > h2{
+        font-size: 1.2em;
+    }
+    .footer_section_segment:first-child > h2{
+        font-size: 1.6em;
+    }
+    .input_container > input{
+        width: 200px;
+    }
+    
+ }
