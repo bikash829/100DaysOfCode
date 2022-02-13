@@ -200,9 +200,9 @@ nav{
 }
 
 .popup_image{
+    height: auto;
     width: 40px;
     position: relative;
-    height: auto;
 
 }
 
@@ -722,19 +722,20 @@ footer{
  }
 
 /* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { 
+/* // Medium devices (tablets, less than 992px) */
+/* // Medium devices (tablets, less than 992px) */
+/* // Medium devices (tablets, less than 992px) */
+/* // Medium devices (tablets, less than 992px) */
 
 
- }
 
+/* // Large devices (desktops, less than 1200px) */
 
- @media (max-width: 1060px) { 
+@media (max-width: 1060px) { 
     .food_card:nth-of-type(5){
         order: 6;
     }
 }
-
-/* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) { 
     *{
         font-size: 15px;
@@ -853,3 +854,123 @@ footer{
     }
     
  }
+
+
+ @media (max-width: 991.98px) { 
+
+    :root{
+        --margin-beside : 0 60px;
+    }
+   
+    
+    .nav_menu{
+        display: none;
+    }
+    .banner_description > *{
+        text-align: center;
+    }
+
+    .banner_top_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner_image_container{
+        position: relative;
+        padding: 20px 0 0 0;
+        /* width: 100%; */
+    }
+
+    .banner_image_container > img{
+        width: 100%;
+        height: auto;
+    }
+    .popup{
+        right: -100px;
+        top: 170px;
+    }
+   
+    .brands_logo > ul{
+        justify-content: space-evenly;
+    }
+
+    .banner_bottom{
+        position: relative;
+        display: block;
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .brands_style{
+        position: absolute;
+        top: -150px;
+        right: 0;
+
+    }
+
+    .services{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .service_card{
+        /* flex: 2; */
+       flex-basis: 50%; 
+        margin: 20px 0;
+    }
+     .content_title {
+        text-align: center;
+      }
+
+    .benifit{
+        flex-direction: column;
+    }
+
+    .content_title{
+        margin: 80px 0 50px 0;
+    }
+    .benifit_content {
+        padding: 0 0 0 0;
+    }
+
+    .benifit_content ul{
+        margin: 0 0 0 25px;
+    }
+
+    .stars_container{
+        flex-direction: column;
+    }
+
+    .stars_description{
+        margin: 50px 0
+    }
+    .stars_promo_button{
+        text-align: center;
+        margin-top:30px;
+    }
+
+    .porduct_container{
+        flex-wrap: wrap;
+    }
+    .porduct_container > div {
+        padding: 30px 30px;
+        margin: 20px 0;
+    }
+    
+
+
+    
+    .footer_section{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer_section_segment{
+        margin: 20px 20px;
+        flex:1; 
+    }
+
+
+   
+
+ }
+
