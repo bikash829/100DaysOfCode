@@ -69,8 +69,14 @@ header{
     height: auto;
     background-color: #FFFFFF; /* rgba(255, 255, 255, 1) */
     
+    
 }
-
+.mobilemenu{
+    display: none;
+}
+.navigationasidenmenu{
+    display: none;
+}
 
 nav{
     width: 100%;
@@ -256,6 +262,7 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 .brands_logo, .brand_style{
     flex-basis: 50%;
@@ -629,10 +636,8 @@ footer{
 }
 .footer_section_segment{
     margin: 2px;
-    
-}
-.footer_section_segment{
     flex-basis: 20%;
+    
 }
 
 .footer_section_segment:first-child{
@@ -710,24 +715,6 @@ footer{
 
 
 /* ======================================Responsive code ======================================= */
-
-/* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
-
- }
-
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
-
- }
-
-/* // Medium devices (tablets, less than 992px) */
-/* // Medium devices (tablets, less than 992px) */
-/* // Medium devices (tablets, less than 992px) */
-/* // Medium devices (tablets, less than 992px) */
-/* // Medium devices (tablets, less than 992px) */
-
-
 
 /* // Large devices (desktops, less than 1200px) */
 
@@ -855,7 +842,7 @@ footer{
     
  }
 
-
+/* // Medium devices (tablets, less than 992px) */
  @media (max-width: 991.98px) { 
 
     :root{
@@ -866,6 +853,100 @@ footer{
     .nav_menu{
         display: none;
     }
+
+
+    .mobilemenu{
+        line-height: 35px;
+        display: block;
+
+
+    }
+
+    .mobilemenu__button{
+        text-decoration: none;
+        font-size: 1.3em;
+        padding-top: 4px;
+    }
+
+    .mobilemenu__button i{
+        font-size: 1.2em;
+        padding-left: 5px;
+    }
+
+    header{
+        position: relative;
+    }
+
+    .navigationasidenmenu *{
+        font-size: 1.1rem;
+    }
+
+    
+    .navigationasidenmenu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: auto;
+        background-color: #FFF;
+        z-index: +11;
+        box-shadow: 0 0 10px lightblue;
+        display: none;
+
+    }
+
+    .navigationasidemenu__close{
+        position: relative;
+    }
+
+    .navigationasidemenu__close i{
+        position: absolute;
+        right: 1.4rem;
+        top: 1rem;
+        font-size: 1.8rem;
+
+    }
+
+
+    .navigationasidenmenu__list{
+        list-style: none;
+        margin-top: 3rem;
+        
+    }
+    .navigationasidenmenu__item{
+        margin: 3px 0;
+        
+        
+    }
+
+    .navigationasidenmenu__item:hover{
+        background-color: rgba(243, 252, 247,1);
+        box-shadow: inset 0 -5px 3px -3px rgb(224, 250, 236), inset 0 5px 3px -3px rgb(224, 250, 236); 
+        transition: 300ms;
+
+    }
+
+   
+    .navigationasidenmenu__item  a{
+        text-decoration: none;
+        padding: 15px 40px 15px 40px;
+        display: inline-block;
+        margin: auto;
+
+
+    }
+    .item__dot{
+        height: 8px;
+        width: 8px;
+        background-color: green;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: -20px;
+    }
+
+
+
+
     .banner_description > *{
         text-align: center;
     }
@@ -973,4 +1054,66 @@ footer{
    
 
  }
+
+
+ /* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+    :root{
+        --margin-beside : 0 40px;
+    }
+   
+    .popup{
+        
+        top: unset;
+        right: 0;
+        bottom: 4rem;
+        z-index: 12;
+    }
+    .rating_popup{
+        top: unset;
+        right: 0;
+        bottom: 0;
+        left: unset;
+        z-index: 12;
+
+    }
+
+    .footer_section{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer_section_segment:first-child{
+        flex-basis:auto;
+    }
+
+    .footer_section_segment:nth-of-type(2),.footer_section_segment:nth-of-type(3){
+        flex-basis: 40%;
+    }
+
+    .footer_section_segment{
+        margin-top: 20px;
+    }
+
+    .footer_section_segment *{
+        text-align: center;
+    }
+
+    .footer_section_segment > .input_container{
+        justify-content: center;
+    }
+
+    .social_link_container{
+        justify-content: center;
+    }
+
+   
+    
+
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+}
 
