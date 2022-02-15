@@ -716,13 +716,53 @@ footer{
 
 /* ======================================Responsive code ======================================= */
 
+/* // Large devices (desktops, greater than 1400px) */
+
+@media (min-width:1400px){
+    *{
+        font-size: 1.1rem;
+    }
+    :root{
+        --margin-beside : 0 12rem;
+    }
+
+    .nav_logo > h1 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+.nav_container{
+    padding: 2.5rem 0;
+}
+
+    .banner_description > * {
+        margin: 4rem 0;
+    }
+    .banner_description > h2 {
+        font-size: 4.5vw;
+      }
+    .banner_image_container > img {
+        width: 31vw;
+      }
+    .banner_bottom{
+        height:9rem;
+    }
+
+    .banner_top_container {
+        padding: 1rem 0 1rem 0;
+      }
+}
+
+@media (max-width: 1800px){
+    :root{
+        --margin-beside : 0 8rem;
+    }
+
+
+}
+
 /* // Large devices (desktops, less than 1200px) */
 
-@media (max-width: 1060px) { 
-    .food_card:nth-of-type(5){
-        order: 6;
-    }
-}
+
 @media (max-width: 1199.98px) { 
     *{
         font-size: 15px;
@@ -841,6 +881,11 @@ footer{
     }
     
  }
+ @media (max-width: 1060px) { 
+    .food_card:nth-of-type(5){
+        order: 6;
+    }
+}
 
 /* // Medium devices (tablets, less than 992px) */
  @media (max-width: 991.98px) { 
@@ -871,6 +916,7 @@ footer{
     .mobilemenu__button i{
         font-size: 1.2em;
         padding-left: 5px;
+        color: #06C167;
     }
 
     header{
@@ -888,7 +934,7 @@ footer{
         right: 0;
         height: 100%;
         width: auto;
-        background-color: #FFF;
+        background-color: rgba(246, 255, 252,1);
         z-index: +11;
         box-shadow: 0 0 10px lightblue;
         display: none;

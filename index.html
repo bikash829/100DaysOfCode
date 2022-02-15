@@ -41,16 +41,18 @@
                     </ul>
                 </div>
 
-                <div class="mobilemenu">
-                    <a href="#" class="mobilemenu__button">Menu <i class="fas fa-bars"></i></a>           
+                <!-- mobile navigation menu bar  -->
+                <div  class="mobilemenu" >
+                    <a href="#" onclick="menu_event()" class="mobilemenu__button">Menu <i class="fas fa-bars"></i></a>           
                 </div>
 
             </div>
         </nav>
 
-        <div class="navigationasidenmenu">
+        <!-- mobile navigation menu  -->
+        <div class="navigationasidenmenu" id="moibile_nav_menu">
             <div class="navigationasidemenu__close">
-                <a href="#"><i class="fas fa-times"></i></a>
+                <a href="#"><i onclick="menu_event()" class="fas fa-times"></i></a>
                 
             </div>
             <ul class="navigationasidenmenu__list">
@@ -514,6 +516,26 @@
         </div>
     </footer>   
     <!-- End footer section  -->
+
+    <script>
+     
+    
+            
+            
+
+    function menu_event(){
+        let menu = document.getElementById("moibile_nav_menu");
+
+        if (menu.style.display == '' || menu.style.display === "none") {
+            menu.style.display = "block";
+        }else{
+            menu.style.display = "none";
+        }
+        
+
+    }
+    
+    </script>
 
 </body>
 </html>
