@@ -1114,6 +1114,96 @@ footer{
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) { 
+    :root{
+        --margin-beside : 0 10px;
+    }
 
+    .content_title {
+        margin: 2rem 0 1.5rem 0;
+      }
+
+    .section_container{
+        margin: 3rem 0 2rem 0;
+    }
+      .content_title h3 {
+        font-size: 2.6rem;
+      }
+
+      .benifit_content > ul > li {
+        font-size: 1.2rem;
+        line-height: 3rem;
+      }
+
+
+    .brands_logo > ul{
+        flex-wrap: wrap;
+    }
+    .banner_image_container{
+        position: static;
+    }
+    .services{
+        flex-direction: column;
+    }
+
+    .service_card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service_logo{
+        margin: 0;
+    }
+
+    .benifit_poster{
+        padding: 0  0 40px 0;
+    }
+    .benifit_poster img{
+        width: 90%;
+    }
+
+    .stars_poster > .poster_wrapper {
+        padding: 0 0 30px 30px;
+      }
+
+      .porduct_container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 0 3rem;
+      }
+
+      .prodcut_image {
+        max-width: 40vw;
+        margin: auto;
+      }
+      .footer_section{
+          flex:none;
+      }
+      .footer_section_segment:nth-of-type(4){
+          margin: auto 0;
+
+      }
+      .footer_segment_title {
+        padding-bottom: 1.5rem;
+      }
+      .footer_section_segment > ul > li > a {
+        line-height: 2rem;
+      }
+
+      .input_container > input {
+        width: 10rem;
+      }
+      .veggifood_wrapper h2 {
+        font-size: 2.5rem;
+      }
 }
 
+@media (max-width: 392px){
+    .stars_cards {
+        display: block;
+       
+      }
+
+      .stars_card_box{
+        margin: 1.4rem 0;
+      }
+}
