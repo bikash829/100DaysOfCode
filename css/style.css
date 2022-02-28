@@ -1,5 +1,243 @@
-*{
+/* external css values & files */
+@import url("font.css");
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* font familly  -----------------------------
+###
+    font-family: 'Inter', sans-serif;
+
+    font-family: 'Playfair Display', serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'plus-jakarta-sans', 'sans-serif';
+###
+-----------------------------------------------
+*/
+
+.z-index-first {
+    z-index: 111;
+}
+
+.z-index-second {
+    z-index: 100;
+}
+
+.z-index-third {
+    z-index: 10;
+}
+
+
+.header {
+    background-color: #F9F8F9;
+}
+
+.navbar {
+    background-color: #FFF;
+}
+
+.nav__search-input--style {
+    border-radius: 2px;
+
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: .92rem;
+}
+
+
+.inner__banner {}
+
+.banner * {
+    font-size: 1rem;
+    font-family: 'plus-jakarta-sans', 'sans-serif';
+}
+
+.banner__title {
+    font-size: 5vw;
+    font-weight: 900;
+    color: #094B72;
+    font-family: 'Playfair Display', serif;
+}
+
+.banner__para {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #4F4F4F;
+}
+
+.banner__button.button--theme--db {
+    background-color: #094B72;
+    color: #FFF;
+}
+
+.banner__button.button--size {
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: .95rem;
+    text-transform: uppercase;
+}
+
+.inner__logo {
+    list-style: none;
+    padding: 0;
+}
+
+.companies-advertisement__title {
+    font-size: 1.2rem;
+}
+
+.banner__poster {
+    width: 30vw;
+}
+
+
+/* why legalization  */
+
+.why-legalization--theme--skyblue {
+    background-color: #F2FCFF;
+}
+
+.caption__title--size--medium {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.caption__para--size {
+    font-size: 1.2rem;
+}
+
+
+.card__title--font--playfair {
+    font-family: 'Playfair Display', serif;
+
+}
+
+.card__title--size--samll {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card__title {
+    padding: .9rem 0;
+}
+
+.card__para--font--jakarta {
+    font-family: 'plus-jakarta-sans', 'sans-serif';
+
+}
+
+.card__para--theme--muted {
+    color: rgba(139, 140, 140, 1);
+}
+
+.card__para--size--small {
+
+    font-size: .96rem;
+}
+
+.logalization-card__inner {
+    min-height: 30vh;
+    border: none;
+    box-shadow: 0 0 10px rgba(211, 211, 211, .5);
+}
+
+/* calculation status  */
+.calculation-status {
+    background-image: url(../images/bg/BG.png);
+}
+
+.calculation-status * {
+    color: #FFF;
+}
+
+.counting__ammount--size {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.counting__caption--size {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.counting__separator {
+    height: 100%;
+    width: 1px;
+    background-color: #FFF;
+    margin: 0 2.5vw;
+
+}
+
+
+/* clinet testimonial  */
+.cl-testimonial * {
+    font-size: 1rem;
+
+}
+
+.cl-testimonial p {
+    font-size: .94rem;
+    margin-bottom: 0;
+}
+
+.cl-testimonial-wrapper{
+    background-color: #F2FCFF;
+    ;
+}
+
+.cl-identity * {
+    font-family: 'Inter', sans-serif;
+}
+
+.clinet__photo-wrapper {
+    max-height: 5rem;
+    max-width: 5rem;
+    border-radius: 50%;
+}
+
+.client__photo {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.client__name {
+    font-weight: 700;
+}
+
+.cl-details-wrapper__inner {
+    border: none;
+    background-color: #F2FCFF;
+    /* box-shadow: 0 0 10px lightgray; */
+}
+
+.cl-description.card {
+    border: none;
+    box-shadow: 0 0 8px lightgray;
+}
+.cl-description__title{
+    font-weight: 600;
+}
+
+.tringle-shape {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 0;
+    border-top: 20px solid #FFF;
+    bottom: -1.28rem;
+    right: calc(50% - 1rem);
 }

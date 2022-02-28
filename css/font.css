@@ -1,0 +1,36 @@
+/* Plus jakarta sans font  */
+@font-face {
+    font-family: plus-jakarta-sans;
+    src: url(../vendor/PlusJakartaSans-2.6/webfonts/PlusJakartaSans-Regular.woff);
+}
+
+@font-face {
+    font-family: plus-jakarta-sans;
+    src: url(../vendor/PlusJakartaSans-2.6/webfonts/PlusJakartaSans-Light.woff);
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: plus-jakarta-sans;
+    src: url(../vendor/PlusJakartaSans-2.6/webfonts/PlusJakartaSans-SemiBold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: plus-jakarta-sans;
+    src: url(../vendor/PlusJakartaSans-2.6/webfonts/PlusJakartaSans-Bold.woff);
+    font-weight: 700;
+}
+@font-face {
+    font-family: plus-jakarta-sans;
+    src: url(../vendor/PlusJakartaSans-2.6/webfonts/PlusJakartaSans-Medium.woff);
+    font-weight: 500;
+}
+@font-face {
+    font-family: plus-jakarta-sans;
+    src: url(../vendor/PlusJakartaSans-2.6/webfonts/PlusJakartaSans-ExtraBold.woff);
+    font-weight: 800;
+}
+
+/* plus jakarta sans end line */
