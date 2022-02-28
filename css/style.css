@@ -21,6 +21,9 @@
 ###
 -----------------------------------------------
 */
+p{
+    margin-bottom: 0;
+}
 
 .z-index-first {
     z-index: 111;
@@ -73,18 +76,19 @@
     font-size: 1.4rem;
     font-weight: 500;
     color: #4F4F4F;
+
 }
 
-.banner__button.button--theme--db {
+.button {
     background-color: #094B72;
     color: #FFF;
+    font-weight: 500;
+    font-size: .95rem;
 }
 
 .banner__button.button--size {
     padding: 20px 20px;
     border-radius: 10px;
-    font-weight: 500;
-    font-size: .95rem;
     text-transform: uppercase;
 }
 
@@ -238,6 +242,107 @@
     border: 20px solid transparent;
     border-bottom: 0;
     border-top: 20px solid #FFF;
-    bottom: -1.28rem;
+    bottom: -1.20rem;
     right: calc(50% - 1rem);
+}
+
+.qsn-contact__img{
+    border-radius: 0 0 0 3rem;
+
+}
+
+
+.qsn-contact-button{
+    color: #FFF;
+}
+
+.qsn-contact-button--style{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+
+}
+
+.btn:hover{
+    color: #FFF;
+
+}
+
+/* //footer section ----------------------- */
+.footer *{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: .97rem;
+}
+
+.footer h2{
+    font-size: 1.3rem;
+}
+
+.footer__body {
+    background-color: rgba(15, 110, 140, 1);
+
+}
+
+.list-group-item{
+    padding-left: 0;
+}
+
+.footer__link-item{
+    text-decoration: none;
+}
+.footer__link-item:hover{
+    color: #FFF;
+}
+
+.footer__bottom *{
+    font-weight: 200;
+    font-size: .90rem;
+}
+
+.footer__bottom{
+    background-color: rgba(5, 84, 109, 1);
+
+}
+
+.social-icon{
+    display: flex;
+    list-style: none;
+    justify-content:end;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.social-icon > li{
+    margin: auto .6rem;
+    
+}
+
+.social-icon > li * {
+    font-size: 1rem;
+    
+}
+
+/* .social-icon > li{
+    background-color: red;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    background-color: rgba(15, 110, 140, 1);
+}
+
+.social-icon > li > a{
+    position: absolute;
+    left: .450rem;
+} */
+
+.social-icon > li > a {
+    padding: 5px 6px;
+    background-color: rgba(15, 110, 140, 1);
+    border-radius: 50%;
+
 }
