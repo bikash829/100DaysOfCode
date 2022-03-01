@@ -40,6 +40,7 @@ p{
 
 .header {
     background-color: #F9F8F9;
+    
 }
 
 .navbar {
@@ -58,15 +59,16 @@ p{
 }
 
 
-.inner__banner {}
+
 
 .banner * {
+    
     font-size: 1rem;
     font-family: 'plus-jakarta-sans', 'sans-serif';
 }
 
 .banner__title {
-    font-size: 5vw;
+    font-size: 5rem;
     font-weight: 900;
     color: #094B72;
     font-family: 'Playfair Display', serif;
@@ -77,6 +79,12 @@ p{
     font-weight: 500;
     color: #4F4F4F;
 
+}
+
+.banner__image{
+    /* height: 100%; */
+    right: 0;
+    
 }
 
 .button {
@@ -101,9 +109,6 @@ p{
     font-size: 1.2rem;
 }
 
-.banner__poster {
-    width: 30vw;
-}
 
 
 /* why legalization  */
@@ -308,11 +313,12 @@ p{
 .social-icon{
     display: flex;
     list-style: none;
-    justify-content:end;
+    /* justify-content:end; */
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     height: 100%;
     margin-bottom: 0;
+    padding: 10px 0;
 }
 
 .social-icon > li{
@@ -325,20 +331,6 @@ p{
     
 }
 
-/* .social-icon > li{
-    background-color: red;
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    position: relative;
-    cursor: pointer;
-    background-color: rgba(15, 110, 140, 1);
-}
-
-.social-icon > li > a{
-    position: absolute;
-    left: .450rem;
-} */
 
 .social-icon > li > a {
     padding: 5px 6px;
@@ -346,3 +338,11 @@ p{
     border-radius: 50%;
 
 }
+
+@media (max-width: 767.98px) { 
+    .banner__title {
+        font-size: 3.5rem;
+        
+    }
+    
+ }
